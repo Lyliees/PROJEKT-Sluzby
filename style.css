@@ -1,0 +1,277 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family:'Montserrat', sans-serif;
+    margin: 60px 20px;
+    background-color: #FAFAFA;
+}  
+
+.cestovatel {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+h1::after {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #407BFF;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.ikona-cestovatel {
+    width: 50vw;
+    height: auto;
+}
+
+.sloupec.levy {
+    margin-top: 40px;
+}
+
+.nabidka {
+    margin-top: 60px;
+}
+
+.obsah-ramecku {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.tlacitecka {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: #407BFF;
+    width: 195px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: #8B8B8B;
+    width: 220px;
+}
+  
+.ramecek {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.pod-nadpisem {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sluzby {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+}
+
+.ikona {
+        flex-basis: 45px;
+        padding-left: 20px;
+}
+        
+.obsah-ramecku {
+        padding: 30px 20px 25px 30px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+}
+
+
+@media screen and (min-width: 640px)  {
+
+        .cestovatel {
+            align-items: center;
+        }
+
+        .ikona-cestovatel {
+            max-width: 400px;
+        }
+
+        .desktop {
+            margin-top: 80px;
+        }
+
+        .nabidka {
+            margin-top: 80px;
+        }
+
+        .sluzby {
+            display: flex;
+            flex-direction: row; 
+            margin-top: 60px;
+            gap: 20px;
+        }
+        
+        .ramecek {
+            flex: 1 1 calc((100% - 20px) / 3);
+            flex-direction: column;
+            align-items: center;         
+        }
+
+        .ikona {
+            flex-basis: 50px;
+            padding-left: 0;
+            margin-top: 40px;
+        }
+
+        .tlacitecka {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .sloupec-levy {
+            margin-top: 30px;
+        }
+}
+
+
+@media screen and (min-width: 1100px)  {
+
+                body {
+                    max-width: 1040px;
+                    margin-left: auto;
+                    margin-right: auto;
+                } 
+
+                .desktop {
+                    display: flex;
+                    align-items: center;
+                    gap: 60px;
+                }
+
+                .pod-nadpisem {
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+
+                .sloupec.pravy {
+                    order: 1;
+                    width: 490px;
+                    margin: 0 auto;
+                }
+
+                .sloupec.levy {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+
+                .tlacitecka {
+                    justify-content: flex-start;
+                }
+
+                .sloupec {
+                    max-width: 490px;
+                }
+                
+                .ikona-cestovatel {
+                    max-width: 425px;
+                }
+
+                .nabidka {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 80px;
+                }
+
+                .stred1 {
+                    order: 1;
+                    margin-left: 60px;  
+                }
+
+                h1 {
+                    margin-bottom: 40px;
+                    margin-top: 0;
+                }
+
+                p, h2, h1 {
+                    text-align: left;
+                }
+
+                h2 {
+                    margin-top: 0px;
+                }
+
+                .dole1 {
+                    margin-right: 60px;
+                }
+
+                .stred1, .dole1 {
+                    width: 430px;
+                }
+
+                .stred2, .dole2{
+                    width: 550px;
+                }
+
+                .nabidka {
+                    margin-top: 80px;
+                }
+
+                .sluzby {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                h1::after {
+                    margin-left: 0;
+                }
+
+                .obsah-ramecku {
+                    text-align: center;
+                }
+   
+}
